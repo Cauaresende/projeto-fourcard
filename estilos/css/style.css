@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-red:hsl(0, 78%, 62%);
+    --color-cyan:hsl(180, 62%, 55%);
+    --color-orange:hsl(34, 97%, 64%);
+    --color-blue:hsl(212, 86%, 64%);
+    --color-darkgray:hsl(234, 12%, 34%);
+    --color-lightgray:hsl(212, 6%, 44%);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(Poppins-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: Poppins;
+}
+
+.title-section{
+    text-align: center;
+    padding: 30px 10px;
+}
+
+h1 {
+    color: hsl(233, 12%, 15%);
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+h1 span {
+    color: var(--color-darkgray);
+    font-weight: lighter;
+    font-size: 25px;
+    display: block;
+}
+
+h2 {
+    color: var(--color-darkgray);
+    font-size: 16px;
+    text-align: center;
+}
+
+ h3 {
+    text-align: justify;
+    color: hsl(233, 12%, 15%);
+}
+
+p {
+    text-align: justify;
+    font-size: 14px;
+    color: var(--color-darkgray);
+}
+
+.items-section {
+    display: grid;
+    grid-template-rows: repeat(4, 300px);
+    justify-content: center;
+}
+
+.items-section div {
+    text-align: center;
+    width: 70vw;
+    margin: 20px 0px;
+    border-radius: 5px;
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.219);
+    padding: 20px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.items-section div img {
+    width: 60px;
+    align-self: flex-end;
+    padding-top: 40px;
+}
+
+.supervisor-topic {
+    border-top: 5px solid var(--color-cyan);
+}
+
+.team-builder-topic {
+    border-top: 5px solid var(--color-red);
+}
+
+.karma-topic {
+    border-top: 5px solid var(--color-orange);
+}
+
+.calculator-topic {
+    border-top: 5px solid var(--color-blue);
+}
