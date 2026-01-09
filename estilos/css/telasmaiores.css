@@ -2,6 +2,14 @@
 
 @media screen and (min-width:1000px) {
     
+    h1 , h1 span{
+        font-size: 35px;
+    }
+    
+    h2 {
+        font-size: 18px;
+    }
+
     .items-section {
         display: grid;
         grid-template-columns: repeat(3, 350px);
